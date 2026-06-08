@@ -1,0 +1,416 @@
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    width:100%;
+    height:100%;
+   display:flex;
+    flex-direction:column;
+}
+
+nav{
+    cursor:pointer;
+    display:flex;
+    padding:10px 90px 11px 90px; 
+    align-items:center;
+    justify-content:space-between;
+}
+
+nav .left{
+    display:flex;
+    align-items:center;
+    gap:21px;
+}
+
+nav p{
+    font-size:13px;
+    cursor:pointer;
+}
+
+nav p:hover{
+ border-bottom:3px solid black;
+}
+
+nav .left img{
+    margin-right:12px;
+}
+
+nav .right{
+  display:flex;
+  font-size:13px;
+  gap:22px;
+  align-items:center;
+  margin-right:2px;
+}
+
+.ri-search-line{
+    font-size:15px;
+}
+
+.ri-shopping-cart-2-line{
+   font-size:18px;
+}
+
+.profile{
+    background-image:url(https://images.unsplash.com/photo-1778844648458-129cfdf980a6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D);
+    height:35px;
+    width:35px;
+    border-radius:30px;
+    background-position:center;
+    background-size: cover;
+}
+
+section{
+
+width: 100%;
+display:block;
+}
+
+.parent{
+    background-image:url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Surface-Pro-AI-11Ed-Sapphire-MC001-3000x1682:VP5-1920x600");
+    background-size: cover;
+    height:475px;
+    position:relative;
+    cursor: pointer;
+}
+
+.child{
+    background-color:white;
+    width:570px;
+    height:57%;
+    position:absolute;
+    top:48px;
+    left:76px;
+    cursor: pointer;
+}
+
+#childhead{
+    padding: 45px 0px 0px 48px;
+    font-size:37px;
+    font-weight:500;
+}
+
+#childsub{
+    padding:18px 0px 0px 48px;
+    font: size 18px;
+    line-height: 24px;
+}
+
+#childbutton{
+   width:110px;
+   height:40px;
+   font-size:15px;
+   font-weight: 550;
+   padding:10px 6px 10px 6px;
+   margin:25px 0px 0px 48px;
+   background-color:#0068b8;
+   color:white;
+   border:none;
+   cursor: pointer;
+}
+
+#childbutton:hover{
+    background-color:#02599c;
+}
+
+
+.container{
+    width:100%;
+    height:15%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:45px;
+  margin-top:120px;
+}
+
+.box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+}
+
+.box p{
+    color:#0068b8;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.container2{
+    display:block;
+    height:70%;
+    width:93%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:25px;
+    margin:140px 30px 0px 50px;
+
+}
+
+.card{
+    width:23%;
+   height:515px; 
+    box-shadow: 0px 8px 7px rgba(0, 0, 0, 0.127);
+    cursor: pointer;
+}
+
+.heading{
+ font-size:28px;
+ font-weight:500;
+ padding:20px 20px 0px 20px;
+}
+
+.subheading{
+ font-weight:400;
+ padding:10px 20px 0px 20px;
+}
+
+.contentcard{
+    display:flex;
+    flex-direction:column;
+    height:60%;
+}
+
+.cardbutton{
+padding:10px 12px 10px 12px;
+color:white;
+background-color:#0068b8;
+border:none;
+font-size:15px;
+font-weight: 600;
+width:fit-content;
+margin-top:auto;
+margin-left:20px;
+margin-bottom: 2px;
+cursor:pointer;
+}
+
+.cardbutton:hover{
+   background-color:#035798; 
+}
+
+.container3{
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP5-1596x600);
+    background-size: cover;
+    height:70%;
+    width:91%;
+    margin:60px 30px 0px 65px ;
+    cursor: pointer;
+}
+
+.text{
+ display:flex;
+ flex-direction:column;
+ padding:145px 0px 0px 125px;
+}
+
+.texthead{
+    font-size:37px;
+    color:white;
+    font-weight: 500;
+    line-height: 42px;
+}
+   
+.textpara{
+    color:white;
+    padding:20px 0px 0px 125px;
+    font-size:16px;
+    line-height:25px;
+}
+
+.textbutton{
+    background-color: #0068b8;
+    width:fit-content;
+    padding: 10px 14px 10px 14px;
+    font-size:15px;
+    font-weight:550;
+    color:white;
+    border:none;
+    margin:20px 0px 0px 125px;
+    cursor: pointer;;
+}
+
+.textbutton:hover{
+   background-color:#035798; 
+}
+
+.new{
+    width:fit-content;
+    font-size:15px;
+    padding:5px 12px 5px 12px;
+    margin:10px 0px 0px 25px;
+    font-weight:550;
+    background-color:#ffbb00;
+    border:none;
+}
+
+.new1{
+      height:25px;
+    font-size:15px;
+    padding:5px 12px 5px 12px;
+    margin:10px 0px 0px 25px;
+    font-weight:550;
+    background-color:#ffffff;
+    border:none;
+}
+
+.heading1{
+   font-size:28px;
+   font-weight:500;
+    padding:6px 20px 0px 25px;
+}
+
+.business-heading{
+    margin:90px 0px 0px 65px;
+}
+
+.business-heading h1{
+    font-size:37px;
+    font-weight:500;
+}
+
+.container4{
+    height:70%;
+    width:93%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:25px;
+    margin:14px 30px 0px 50px;
+}
+
+.container5{
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero-Desktop-AI-Sustainability-Less-Plastic:VP5-1920x600);
+    background-size: cover;
+    height:60%;
+    width:91%;
+    margin:100px 30px 0px 65px ;
+    cursor:pointer;
+}
+
+.text1{
+ display:flex;
+ flex-direction:column;
+ padding:145px 0px 0px 850px;
+}
+
+.texthead1{
+    font-size:37px;
+    color:white;
+    font-weight: 500;
+    line-height: 42px;
+}
+   
+.textpara1{
+    color:white;
+    padding:20px 0px 0px 850px;
+    font-size:16px;
+    line-height:25px;
+}
+
+.textbutton1{
+    background-color: #0068b8;
+    width:fit-content;
+    padding: 10px 14px 10px 14px;
+    font-size:15px;
+    font-weight:550;
+    color:white;
+    border:none;
+    margin:20px 0px 0px 850px;
+    cursor:pointer;
+}
+.textbutton1:hover{
+   background-color:#035798; 
+}
+
+.hashtag{
+    display:flex;
+    height:1%;
+    width:fit-content;
+    justify-content: center;
+    margin:60px 80px;
+    gap:20px;
+    cursor:pointer;
+}
+
+.hashtagp{
+    padding-top:6px;
+    cursor:text;
+}
+
+footer{
+    display:flex;
+    background-color:#f2f2f2;
+    height:55%;
+    margin:0px 0px;
+}
+
+.text-box{
+    display:flex;
+    flex-direction: column;
+    gap:18px;
+    width:150px;
+    height:300px;
+    padding:35px 0px;
+    color: #616161;
+    margin:0px 8px 0px 75px;
+}
+
+.text-box h5{
+    font-size:15px;
+    font-weight:500;
+}
+
+.text-box small{
+ font-size: 11px;
+ cursor:pointer;
+}
+ .text-box small:hover{
+   text-decoration: underline;
+}
+
+.scroll{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+   position:sticky;
+    height:50px;
+    top:90%;
+}
+
+.scroll button{
+    position:absolute;
+    right:20px;
+    bottom:20px;
+    padding:12px 18px;
+    background-color:#d9d9d9;
+    border:none;
+     font-size:15px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    transition:0.3s;
+}
+
+.scroll button:hover{
+    background-color:white;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+    transform:translateY(-3px);
+}
+
+section{
+    position:relative;
+}

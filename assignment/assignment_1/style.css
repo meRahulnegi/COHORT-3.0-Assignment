@@ -1,0 +1,380 @@
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+main{
+background-color:#f7f3f0;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ height:84%;
+ width:100%;
+ display: flex;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+    background-color:#f7f3f0;
+}
+
+.head{
+    padding:2% 6%;
+}
+
+.head h1{
+    font-size:300%;
+    font-weight:100;
+    color:#202020;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20%;
+    margin-left: 20%;
+    cursor:pointer;
+    color:#616161;
+}
+
+.center p:hover{
+   text-decoration: underline;
+   font-weight:500;
+   transition: all 0.5s;
+   color:#5c5a58;
+}
+
+.right{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0% 30%;
+    font-size:200%;
+    gap:60%;
+}
+
+.ri-menu-line:hover{
+     font-weight:900;
+     font-size:80%;
+     transition: all 0.5sec;
+     font-weight:500;
+}
+
+.ri-menu-line{
+    font-size:70%;
+}
+
+.ri-shopping-bag-4-fill:hover{
+    font-weight:900;
+     transition: all 0.5sec;
+     font-size: 120%;
+}
+
+.content1{
+    width:26%;
+    height:85%;
+    margin:0% 6%;
+    display: flex;
+    flex-direction: column;
+    gap:3%;
+}
+
+.ri-flower-line{
+    font-size:200%; 
+}
+
+.collection{
+    letter-spacing:13%;
+    font-size: 100%;
+    color:#636657;
+    font-weight: 500;
+}
+
+.subheading{
+    width:100%;
+    height:30%;
+}
+.subheading h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size:700%;
+    font-weight:lighter;
+    line-height: 80%;
+    color:#21211f;
+}
+
+.line{
+    background-color:#616652;
+    height: 3px;
+    width:4%;
+    position: absolute;
+    top:49%;
+}
+
+.para{
+    margin-top:8%;
+    font-size: 100%;
+    font-weight: 500;
+    color:#524f4e;
+}
+
+.colors{
+    margin-top:2%;
+    display:flex;
+    gap:5%;
+}
+
+.colors{
+    font-size: 115%;
+    font-weight: 600;
+     color:#21211f;
+}
+
+
+.color1{
+    width:6%;
+    border-radius: 50%;
+    background-color: #7c826c;
+    cursor:pointer;
+}
+
+.color2{
+    width:6%;
+    border-radius: 50%;
+    background-color: #e3dcd5;
+    cursor:pointer;
+}
+
+.color3{
+    width:6%;
+    border-radius: 50%;
+    background-color: #e3a9a8;
+    cursor:pointer;
+}
+
+.small_line{
+    margin-top: 3%;
+    width:4%;
+    background-color: #b0ada5;
+    height:2px;
+}
+
+.lorem{
+    font-size:80%;
+    color:#82807f;
+    font-weight:500;
+}
+
+.last1{
+    height:20%;
+    width:80%;
+    background-color:#b0ada5;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    gap:1%;
+    margin-top:1%;
+}
+
+.featurebox{
+background-color: #f7f6f2;
+width:35%;
+height:100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap:18%;
+}
+
+.feature{
+background-color: #e6e2d8;
+height: 80%;
+width:32%;
+border-radius: 50%;
+padding-left:5%;
+padding-top:2%;
+}
+
+.ri-leaf-line{
+    font-size:150%;
+    color:#878a7c;
+}
+
+.featurebox p{
+    font-size: 65%;
+    font-weight: 700;
+    color:#474545;
+}
+
+.ri-grid-fill{
+      font-size:150%;
+     color:#878a7c;
+}
+
+.content2{
+    display: flex;
+    flex-direction: column;
+   width:44%;
+    height:100%;
+    position:relative;
+    align-items: center;
+}
+
+.scarf{
+    width:50%;
+    height:50%;
+    transform: rotate(270deg);
+    position:absolute;
+    top: 10%;
+    left:23%;
+    font-size:150%;
+    color:#131313;
+}
+
+.line1{
+    background-color:#8c8c7e;
+    position:absolute;
+    height:1%;
+    width:10%;
+    top:5%;
+    left:6%;
+}
+
+.scarf p{
+    margin-left:18%;
+    font-size:110%;
+    position:absolute;
+}
+
+.image{
+    width:90%;
+    height:83%;
+    position:relative;
+    margin:0% 5%;
+    background-image:url(https://images.unsplash.com/photo-1484186139897-d5fc6b908812?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM4fHx8ZW58MHx8fHx8);
+    background-size:cover;
+    background-position: 40% 80%;
+    border-radius:3%;
+}
+
+.price{
+    position: absolute;
+    height:7%;
+    width:10%;
+    top:4%;
+    left:4%;
+    background-color:#faf7f5 ;
+    padding:1% 2%;
+    border-radius:33%;
+}
+
+.rating{
+    display: flex;
+    position:absolute;
+     height:8%;
+     width:30%;
+     background-color: #ebe9e8;
+     top:5%;
+     left:66%;
+     padding:8px 3%;
+     border-radius:20%;
+     color:#4a4846;
+     font-weight: 500;
+}
+.star{
+    display:flex;
+    margin-left:10%;
+    color:#4a4846;
+}
+
+.bag{
+    background-color: #5f664e;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:25%;
+    height:28%;
+    border-radius: 50%;
+    position:absolute;
+    top:68%;
+    left:78%;
+    color:white;
+}
+ .bag .ri-shopping-bag-4-fill{
+    font-size: 200%;
+ }
+
+.imgbar{
+    background-color:#ded8d3;
+    display:flex;
+    width:660px;
+    height:70px;
+    margin-top:3%;
+    margin-right:4%;
+    border-radius:20%;
+    box-shadow:1px 2px 5px rgba(0,0,0,0.2);
+    gap:1px;
+}
+
+.barinside{
+    width: 50%;
+    background-color: #f2eee9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:6%;
+}
+
+.icon{
+    font-size: 260%;
+    color:#6b735e;
+}
+
+.barinside p{
+    font-size: 80%;
+    font-weight: 500;
+}
+
+.content3{
+  height:100%;
+  width:10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top:1%;
+  gap:3%;
+}
+
+.content3img{
+    height:17%;
+    width:63%;
+    border-radius: 20%;
+    border:3px solid black;
+}
+
+#icon1{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwOr8y7l_fYSNLIdi5q04qaaY0Pfh1Smq4tmsuuVx11y3gw2Ov);
+    background-size: cover;
+}
+
+#icon2{
+    background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-oU5qWTEI87LibE0u5JiD44J5ix4xRvGVyELtYtAeBjB8A6is);
+    background-size: cover;
+}
+
+#icon3{
+    background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGfkTwH8ASj4f7eQ4jBTQgU7N7d-kdupeNUJ5wwqo9appVnGE2);
+    background-size: cover;
+}
+
+#icon4{
+    background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3ULMMskvrYAf8mEZ6Dl1ytI1lRXLds6PT-JQf2SffNW6a8D8H);
+    background-size: cover;
+}

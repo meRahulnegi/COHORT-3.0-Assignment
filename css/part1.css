@@ -1,0 +1,273 @@
+body{
+    background-color:wheat;
+    padding:0;
+    margin:0;
+    box-sizing:border-box; 
+}
+
+html,body{
+  height:100%;
+  width:100%;
+}
+/*this is the permanent code upper */
+
+#heading{
+font-family: 'Courier New', Courier, monospace;
+color:Red;
+font-size:70px;
+text-align: center;
+margin-bottom:10px;
+}
+
+.subheading{
+  font-size:50px;
+  text-align: center;
+  margin-bottom:10px;
+}
+
+.para{
+  font-size:20px;
+  text-align:center;
+  text-decoration:underline;
+  word-spacing: 10px;
+  line-height:25px;
+}
+
+                                                   /*till here text styling and font styling*/
+
+.box{
+  background-color: yellow;   /*box model */
+  height:200px;
+  width: 200px;
+  border:5px solid black;
+  margin:80px 60px 60px 580px;
+  padding:60px 60px 60px 60px;
+  background-size:contain; /*background*/
+  background-repeat:no-repeat;
+  background-position:center;
+  background-image: url('https://images.unsplash.com/photo-1777633150161-f3d4390fe695?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
+}
+
+.inside{
+  color:yellow; 
+  text-align:right;  
+}
+
+                                                            /*flex model*/
+
+.container{
+  background-color:pink;
+  margin-bottom:80px;
+  height:60%;
+  width:100%;
+  display:flex;
+  justify-content:space-evenly;   /*row wise */
+  align-items:center;    /*coloumn wise*/
+  flex-wrap:wrap;
+}
+#box1{
+  background-color:green;
+  width:20%;
+  height: 60%;
+}
+
+#box2{
+  background-color:blue;
+   width:20%;
+  height: 60%;
+}
+
+#box3{
+  background-color:aquamarine;
+   width:20%;
+  height: 60%;
+}
+
+#box4{
+  background-color:yellow;
+   width:20%;
+  height: 60%;
+}
+
+#box5{
+  background-color:red;
+   width:40%;
+  height: 40%;
+}
+
+                                                                /*grid study*/
+.container2{
+  background-color: black;
+  height:50%;
+  width:100%;
+  display:grid;
+  gap:10px;
+  grid-template-columns:5fr 3fr 2fr 2fr;
+}
+
+.item{
+  background-color:gold;
+  margin-bottom:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+
+                                                               /*positioning*/
+.container3{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+ height:30%;
+ width:50%;
+ background-color:chartreuse;
+}
+
+/*absolute position */
+/*.diff{
+  position:absolute;
+  background-color:aliceblue;    
+  top:20%;
+  left:20%;
+}*/
+ 
+/*relative position*/
+/*.diff{
+ position:relative;
+  background-color:aliceblue;    
+  top:20%;
+  left:20%;
+}*/
+ 
+/*fixed*/
+/*.diff{
+  position:fixed;
+  background-color:aliceblue;    
+  top:20%;
+  left:20%;
+}*/
+
+/*sticky*/
+ /*.diff{
+  position:sticky;
+  background-color:aliceblue;
+  top:40%;
+  left:20%;    
+ }*/
+
+
+ .diff{
+  display:flex;
+  align-items: center;
+  justify-content:center; 
+  width:50%;
+  height:50%;
+  z-index:2;
+  position:relative;
+  background-color:aliceblue;
+ }
+
+.diff2{
+  position:absolute;
+  left:50%;
+  width:50%;
+  height:50%;
+  z-index:3;
+  background-color:blue;
+}
+                                          /*psudo classes and transitions and transform*/
+.container4{
+ height:50%;
+ width:50%;
+ background-color:aqua;
+}
+
+.contain{
+  height:20%;
+  margin-bottom:10px;
+  background-color: brown;
+  transition:all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.contain:nth-child(2){
+  background-color:red;
+}
+
+.contain:nth-child(3){
+  background-color:blueviolet;
+}
+
+.contain:first-child{
+  background-color:rgb(255, 205, 251);
+}
+
+button{
+  width:50%;
+  height:5%;
+}
+
+button:hover{
+  background-color:rgb(127, 255, 176);
+  color:blue;
+}
+
+input{
+  height:5%;
+  width:50%;
+  outline:none;
+}
+
+input:focus{
+  border:4px dashed red;
+}
+
+.contain:hover{
+  transform:scale(1.5);
+}
+
+#rotat:hover{
+ transform:rotate(90deg);
+}
+
+#transl:hover{
+  transform:translate(100px,30px);
+}
+
+                                                                   /*ANIMATION*/
+
+.parent{
+  background-color:brown;
+  width:50%;
+  height:50%;
+}
+
+.child{
+  background-color:aqua;
+  height:10%;
+  width:10%;
+}
+.child:hover{
+   animation-name:movebox;
+  animation-duration:1s;
+}
+
+@keyframes movebox{
+0%{
+  transform:translateX(0px) rotate(0deg);
+ }
+
+50%{
+  transform:translateX(500px) rotate(0deg);
+ }
+
+60%{
+  transform: translateX(500px) rotate(180deg);
+ }
+
+100%{
+  transform:translateX(688px) rotate(180deg);
+ }
+
+}
