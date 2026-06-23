@@ -1,0 +1,390 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    width:100%;
+    height: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 15% 47% 27%;
+    grid-template-columns: 3% 38% 18% 23% 8% ;
+    column-gap:2%;
+    row-gap:4%;
+    grid-template-areas:
+    "aside left top-right top-right top-right"
+    "aside left center-left center-left center-right"
+    "aside left bottom-left bottom-right bottom-right"
+    ;
+}
+
+.aside{
+    background-color: white;
+    grid-area:aside ;
+    margin-top: 3%;
+    border-radius: 20px;
+}
+
+#one{
+ transform: rotate(270deg);
+ position: absolute;
+ top:85%;
+ font-size: 130%;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#two{
+ transform: rotate(270deg);
+ position: absolute;
+ top:65%;
+ font-size: 130%;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+}
+
+#three{
+ transform: rotate(270deg);
+ position: absolute;
+ top:45%;
+ font-size: 130%;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;        
+}
+
+#four{
+ transform: rotate(270deg);
+ position: absolute;
+ top:25%;
+ left: 10px;
+ font-size: 130%;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.left{
+    background-color: #8184d2;
+    grid-area:left;
+    margin-top: 3%;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    width: 50%;
+    height: 35%;
+    margin-top: 55%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.para{
+  font-size: 350%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+}
+
+.gmail{
+ font-weight: 200;
+ display: inline-block;
+}
+
+.ri-mail-send-line{
+ position: absolute;
+ bottom:35px;
+ left:55%;
+}
+
+.black{
+    background-color: black;
+    height: 20%;
+    width: 25%;
+    border-radius: 50%;
+    position: absolute;
+    top:75%;
+    left:70%
+}
+
+.white{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    background-color: white;
+    border-radius: 50%;
+    top:44%;
+    left:43%
+}
+
+.heading{
+    font-size: 400%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin-left: 7%;
+}
+
+.outer{
+    position: absolute;
+    top:15%;
+    left:35%;
+    background-color: #8082d1;
+    border: 10px solid white;
+    height:45%;
+    width:55%;
+    border-radius: 50%;
+}
+
+.inner{
+    background-color: #efaeff;
+    position: absolute;
+    width:90%;
+    height:90%;
+    top:5%;
+    left:5%;
+    border-radius: 50%;
+}
+
+.man{
+    z-index: 3;
+    position: absolute;
+    height:125%;
+    bottom: 1px;
+}
+
+.left p{
+    font-size: 150%;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ri-atom-line{
+    font-size: 150%;
+}
+
+.about{
+    background-color: white;
+    width: 30%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+}
+
+.top-right{
+    grid-area:top-right;
+    border-radius: 20px;
+}
+
+.top-right h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 700%;
+    letter-spacing: 10px;
+}
+
+.top-right .ri-arrow-right-s-line{
+    color:black;
+    font-size: 200%;
+    position: absolute;
+    left:95%;
+    top:3%;
+    transform:rotate(320deg);
+}
+
+.center-left{
+    background-image: url(https://gratisography.com/wp-content/uploads/2023/06/gratisography-paper-flamingo-free-stock-photo.jpg);
+    background-size:cover;
+    grid-area:center-left;
+    border-radius: 20px;
+    position: relative;
+}
+
+.pause{
+    width:13%;
+    height: 25%;
+    border-radius: 50%;
+    background-color:whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:250%;
+    position: absolute;
+    translate:transform(-50%,-50%);
+    top:50%;
+    left:50%;
+}
+
+.center-left:hover{
+   cursor: pointer;
+
+   .pause{
+    color:blue; 
+   }
+
+   .ri-arrow-right-s-line{
+    color: blue;
+   }
+
+}
+
+.center-left .ri-arrow-right-s-line{
+    color: white;
+    font-size: 180%;
+    position: absolute;
+    left:95%;
+    top:3%;
+    transform:rotate(320deg);
+}
+
+.center-right{
+    background-image:linear-gradient(to bottom,#aadad8 50%,#8e6fbf 50%);
+    display: flex;
+    flex-direction: column;
+    grid-area:center-right;
+    border-radius: 20px;
+    position: relative;
+}
+
+.arrowfir{
+    color: black;
+    font-size: 180%;
+    position: absolute;
+    left:80%;
+    top:3%;
+    transform:rotate(320deg);
+}
+
+.arrowsec{
+    color: black;
+    font-size: 180%;
+    position: absolute;
+    left:80%;
+    top:53%;
+    transform:rotate(320deg);
+}
+
+.first{
+    position: absolute;
+    font-size: 300%;
+    top:10%;
+    left:15%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.second{
+    position: absolute;
+    font-size:180%;
+    top:28%;
+    left:10%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.third{
+    position: absolute;
+    font-size: 300%;
+    top:60%;
+    left:15%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.fourth{
+    position: absolute;
+    font-size:180%;
+    top:77%;
+    left:12%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.bottom-left{
+    background-color: #595959;
+    grid-area:bottom-left;
+    border-radius: 20px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    gap:2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ri-apple-fill{
+    color: white;
+    font-size: 300%;
+}
+
+.bottom-left p{
+    color: white;
+    font-size: 150%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bottom-left .ri-arrow-right-s-line{
+    color: white;
+    font-size: 180%;
+    position: absolute;
+    left:85%;
+    top:3%;
+    transform:rotate(320deg);
+}
+
+.bottom-right{
+    background-color: black;
+    grid-area: bottom-right;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+}   
+
+.bottom-right img{
+    position: absolute;
+    top:10%;
+    right:50%
+}
+
+.global{
+    position: absolute;
+    left: 40%;
+    width:60%;
+    height:100%;
+    background-color: #ffc369;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2%;
+}
+
+
+.global h1{
+    font-size: 350%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.global h2{
+   font-weight: 100;
+   margin-left: 20%;
+}
+
+.global p{
+    font-size: 200%;
+    margin-left: 10%;
+}
+
+.global .ri-arrow-right-s-line{
+    color:black;
+    font-size: 180%;
+    position: absolute;
+    left:85%;
+    top:3%;
+    transform:rotate(320deg);
+}
