@@ -1,0 +1,2469 @@
+@font-face{
+    font-family:Reckless ;
+    src: url(fonts/RecklessCondensedS-TRIAL-Book.woff);
+}
+
+@font-face{
+     font-family: RobotoMono;
+     src: url(fonts/RobotoMono-Regular.ttf)
+}
+
+@font-face{
+    font-family:figtree;
+    src:url(fonts/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2);
+}
+
+@font-face{
+    font-family:midnight;
+    src:url(fonts/midnight-sans-rd-12-medium-trial.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+  height:100%;
+  width:100%;
+}
+
+main{
+    width:100%;
+    min-height:100vh;
+    background-color: #faf8eb;
+    position: relative;
+    padding-top:4.2rem;
+}
+
+
+nav{
+    background-color: #fffefa;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.5rem 1.2rem; 
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:2;
+}
+
+nav .nav-part-1{
+    font-weight:100;
+    flex:1;
+    font-family:Reckless;
+    font-size:1.3rem;
+    align-items: center;
+    display: none;
+}
+
+.nav-items{
+  display:flex;
+  align-items:center;
+}
+
+.nav-part-1 h3{
+    font-weight: 300;
+    width:fit-content;
+    display: flex;
+}
+
+
+.ri-menu-line{
+    font-size: 3rem;
+    flex:1;
+}
+
+.arrowdown{
+    width:18px;
+    height:18px;
+    border: 1px solid black;
+    background-color: #bfdbff;  
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:0.5rem;
+    margin-right: 1.8rem;
+}
+
+.nav-items:hover{
+    cursor:pointer;
+}
+
+.nav-items:hover .arrowdown{
+    background:#ffb700;
+}
+
+.nav-items:hover .arrowdown i{
+    transform:rotate(180deg);
+}
+    
+.arrowdown i{
+    font-size: 70%; 
+    transition: 0.3s ease;  
+}
+
+.ri-star-smile-fill{
+  color:#ffb700;
+  font-size: 110%;
+  margin-left: 0.5rem;
+}
+
+nav .nav-part-2{
+    width: 30%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+}
+
+nav .nav-part-2 img{
+    max-width:100%;
+    height:auto;
+    object-fit: cover;
+}
+
+nav .nav-part-3{
+   display: flex;
+   flex:1.01;
+   gap:2rem;
+   align-items:center;
+   justify-content: end;
+   font-family: RobotoMono;
+   font-size: 0.7rem;
+}
+
+.nav-part-3 svg{
+    width:24px;
+}
+
+.nav-part-3 h3{
+  font-weight: 500;
+  display: none ;
+}
+
+.underline{
+    position:relative;
+    height:30px;
+    display: flex;
+    align-items: center;
+}
+
+.underline:hover{
+    cursor:pointer;
+}
+
+.underline::after{
+   content:"";
+   position:absolute;
+   width:0%;
+   left:0%;
+   bottom:0%;
+   height:1.5px;
+   transition:0.3s ease;
+}
+
+.underline:hover::after{
+   width:100%;
+   background-color:black;
+}
+
+.nav-part-3 svg:hover{ 
+   transform:scale(.92);  
+   cursor:pointer;
+   transition:0.4s;
+}
+
+.section-1{
+  height:90vh;
+  border-bottom:1px solid black;
+  background-image:url(https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=1125.0);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  gap:1rem;
+  padding: 2rem 0.5rem;
+  transition:.3s ease;
+}
+
+.heading-desktop1-h1{
+    display: none;
+}
+
+.heading-desktop1-p{
+    display: none;
+}
+
+
+.section-1 h1{
+    font-family: Reckless;
+   font-size: clamp(4rem, 7vw, 6rem);
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+.section-1 p{
+    font-family:figtree;
+    text-align: center;
+    font-size: clamp(1.2rem, 1.4vw, 1.4rem);
+    font-weight: 400;
+    color: white;
+    line-height: 130%;
+}
+
+.section-1 button{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2a2857;
+    width:97%;
+    padding:1rem;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.1rem;
+}
+
+.section-1:hover{
+    cursor: pointer;
+}
+
+.section-1 button:hover{
+    cursor: pointer;
+    background-color:white;
+    color:#2a2857;
+    border: 1px solid #2a2857;
+}
+
+.section-2{
+    min-height:195vh;
+    width:100%;
+    background-color: #faf8eb;
+    padding:6.2rem 0 0 1.2rem; 
+    position: relative; 
+    border-bottom: 0.1px solid black;
+}
+
+.section-2text{
+    padding-right:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-2text h2{
+    font-family: Reckless;
+    text-align: center;
+    line-height:123%;
+    font-size: clamp(2rem,4.1vw,5rem);
+    width: 20rem;
+    font-weight: 300;   
+}
+
+.heading-desktop{
+    display: none;
+}
+
+.sellers{
+    font-size:2.5rem;
+    padding:0.1rem 0.3rem;
+    font-weight: 600;
+    margin-top:4rem;
+    font-family: midnight;
+    border-radius:10px;
+    rotate:-3deg;
+    background-color:#daaeeb;
+}
+
+.card-section{
+    overflow-x: auto;
+    display: flex;
+    gap:1.3rem;
+}
+
+.card-container{
+    width:17.5rem;
+    min-height:95vh;
+    margin-top: 2rem;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    gap:1.3rem;
+    flex-shrink: 0;
+}
+
+.card-container:hover{
+   cursor:pointer;
+}
+
+.card-container:hover .card img{
+    transform:scale(1.1);
+}
+
+.card{
+   width:100%;
+   height:54vh;
+   border-radius: 10px;
+   border:1px solid black;
+   position:relative;
+   padding:1rem;
+   display:flex;
+   flex-direction: column;
+   align-items: end;
+   justify-content: space-between;
+}
+
+.card-container:nth-child(1) .card,
+.card-container:nth-child(2) .card{
+    background-color: #c0ed91;
+}
+
+.card-container:nth-child(3) .card{
+    background-color: #b0e8c1;
+}
+
+.card-container:nth-child(4) .card,
+.card-container:nth-child(6) .card,
+.card-container:nth-child(10) .card{
+    background-color: #c1e3f7;
+}
+
+.card-container:nth-child(5) .card,
+.card-container:nth-child(8) .card{
+    background-color: #ffcb96;
+}
+
+.card-container:nth-child(7) .card{
+    background-color: #c0e670;
+}
+
+.card-container:nth-child(9) .card{
+    background-color:#ffd1b8;
+}
+
+.card img{
+    width:85%;
+    height:70%;
+    object-position: center;
+    position:absolute;
+    top:13%;
+    transition:all ease 0.3s;
+}
+
+.upper-text{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tea{
+    font-family:midnight;
+    background-color: white;
+    height: 3vh;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding:1rem 0.4rem;
+    font-size:1.3rem;  
+    border-radius:5px;
+    border:1px solid black;
+}
+
+.upper-text i{
+  margin-right: 0.3rem;
+}
+
+
+.add{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    justify-content:center;
+    align-items:center;
+    gap:0.3rem;
+    padding:0.4rem 0.8rem;
+    background-color:white;
+    font-family: figtree;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.add:hover{
+  background-color:#2a2757;
+}
+
+.card-down{
+    display: flex;
+    flex-direction:column;
+    gap:0.5rem;
+}
+
+.card-down-head{
+    font-family: Reckless;
+    font-weight:100;
+    font-size: 1.5rem;
+}
+
+.card-container-amount{
+    font-family: figtree;
+    font-weight: 100;
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    color: black;
+}
+
+.card-down p{
+    font-family: figtree;
+    font-size: 0.9rem;
+    color:#54504b;
+    line-height: 1.2rem;
+}
+
+.explore{
+    background-color: #2a2857;
+    color: white;
+    font-family: figtree;
+    font-size:1.1rem ;
+    position:absolute;
+    top:90%;
+    left:50%;
+    height:3.3rem;
+    width:14.8rem;
+    transform:translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border:1px solid black;
+}
+
+.section-3{
+    height:116vh;
+}
+
+.section-3-heading{
+    display: none;
+}
+
+#reviews{
+    font-family: midnight;
+    background-color: #74bd26;
+    width: fit-content;
+    height:fit-content;
+    font-size: 2.5rem;
+    border: 1px solid black;
+    border-radius:5px;
+    transform: rotate(-3deg);
+    margin:5rem 0rem 3.5rem 1.4rem;
+}
+
+.sec-3-container{
+ height:75vh;
+ overflow-x: auto;
+ display: flex;
+ gap:1rem;
+ margin-left:1.2rem;
+}
+
+.sec-3-card{
+   overflow: hidden;
+   max-height:68vh;
+   width:20.5rem;
+   border-radius: 15px;
+   flex-shrink: 0;
+   display: flex;
+   position:relative;
+   border: 1px solid black;
+}
+
+.sec-3-card:nth-child(1){
+    background-color: #f5af8a;
+}
+
+.sec-3-card:nth-child(1) h2,
+.sec-3-card:nth-child(4) h2,
+.sec-3-card:nth-child(5) h2
+{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.sec-3-card:nth-child(1) .sec-3-card-inner{
+    background-color: #eb6e44;
+}
+
+.sec-3-card:nth-child(1) .sec-3-card-inner .sec-3-card-inner-text p{
+   color: white;
+}
+
+.sec-3-card:nth-child(2){
+    background-color:#aade73;
+}
+
+.sec-3-card:nth-child(2) .sec-3-card-inner{
+   background-color: #74bd26;
+}
+
+.sec-3-card:nth-child(3){
+    background-color:#ffd166;
+}
+
+.sec-3-card:nth-child(3) .sec-3-card-inner{
+   background-color: #ffb500;
+}
+
+.sec-3-card:nth-child(4){
+    background-color:#ace673;
+}
+
+.sec-3-card:nth-child(4) .sec-3-card-inner{
+   background-color: #8abf45;
+}
+
+.sec-3-card:nth-child(5){
+    background-color:#d9c1e0;
+}
+
+.sec-3-card:nth-child(5) .sec-3-card-inner{
+   background-color:#c791db;
+}
+
+.sec-3-card-text{
+ height:75%;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ gap:0.7rem;
+}
+
+.sec-3-card-text-desktop{
+    display: none;
+}
+
+.sec-3-card-text p{
+color:#85614e;
+font-family: figtree;
+font-size: 0.9rem;
+}
+
+.sec-3-card h2{
+    font-family: Reckless;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.sec-3-card-inner{
+   position:absolute;
+   height:16vh;
+   width:88%;
+   top:71%;
+   left:6%;
+   border-radius: 15px;
+   border:1px solid black;
+   display: flex;       
+}
+
+.sec-3-card-inner-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:30%;
+}
+
+.sec-3-line{
+    transform:rotate(90deg);
+    width: 35%;
+    height:1px;
+    top: 50%;
+    left:10%;
+    position: absolute;
+    background-color:black;
+}
+
+.sec-3-card-inner-text{
+  width:70%;
+  height:100%;
+  padding:0rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sec-3-card-inner-text p{
+  font-family: RobotoMono;
+  color: black;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+}
+
+.sec-3-card-inner button{
+    font-family: figtree;
+    height:3rem;
+    width:4.5rem;
+    border-radius: 30px;
+    border:1px solid black;
+    font-size: 1.1rem;
+    transition: all ease 0.3s;
+}
+
+.sec-3-card-inner button:hover{
+      font-size: 0.8rem;
+      cursor:pointer;
+}
+
+.section-4{
+    height:275vh;
+    width:100%;
+    background-image: url("//www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=600 600w, //www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=900 900w, //www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=1200 1200w, //www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=1600 1600w, //www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=2000 2000w");
+    position:relative;
+    background-position: center;
+    background-size: cover;
+    padding:12rem 1.3rem 3rem 1.3rem;
+    display: flex;
+    flex-direction:column;
+    gap:20rem;
+}
+
+.section-4-badge{
+    position:absolute;
+    height:8rem;
+    width:8rem;
+    right:5%;
+    top:-3%;
+}
+
+.sec-4-box1{
+   font-family: midnight;
+   width:100%;
+   height:50vh;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap:8rem;
+}
+
+.sec-4-box1 button{
+    height:5vh;
+    text-align: center;
+    font-size:1.6rem ;
+    font-weight: 600;
+    margin-top:1%;
+    transform:rotate(-2deg);
+    background-color: #a2c9fc;
+    border:none;
+    border-radius:5px;
+}
+
+.sec-4-box1 h2{
+    text-align: center;
+    color:white;
+    font-size:6rem;
+    line-height:5rem;
+    font-weight: 500;
+}
+
+.sec-4-box2{
+  font-family: Reckless;
+  height:20vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sec-4-box2 h3{
+    font-size:1.9rem ;
+    text-align: center;
+    color:white;
+    font-weight:500;
+    line-height:2.4rem;
+    max-width:21rem;
+}
+
+.sec-4-box3{
+  display: flex;
+  height:80vh;
+  flex-direction: column;   
+  position: relative;
+}
+
+.sec-4-box3-features{
+    height:55vh;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;  
+    text-align: center;
+    justify-content: center;
+}
+
+
+.sec-4-box3-image{
+     height:13vh;
+     object-fit: contain;
+     flex-shrink: 0;
+     width:27%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     gap:0.9rem;
+}
+
+.sec-4-box3-image img{
+    height:100%;
+    object-fit: contain;
+}
+
+.sec-4-box3-features p{
+    font-family:RobotoMono;
+    font-size: 0.9rem;
+    line-height:18px;
+    color:white;
+    text-align:center;
+}
+
+.sec-4-box3 button{
+    padding:1rem;
+    border: 1px solid black;
+    width:100%;
+    border-radius: 30px;
+    font-family:figtree;
+    font-size:1.2rem;
+    position: absolute;
+    top:88%;
+}
+
+.sec-4-box3 button:hover{
+    background-color: #2a2857;
+    color:white;
+    cursor:pointer;
+}
+
+.sec-4-desktop{
+    display: none;
+}
+
+.sec-4-features-desktop{
+     display:none;
+}
+
+.section-5{
+    height:auto;
+    padding:3.8rem 1.5rem;
+    display: flex;
+    flex-direction:column;
+    gap:3.5rem;
+    border-bottom:1px solid black;
+}
+
+.sec-5-upper{
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:1.3rem;
+}
+
+.discover{
+    font-family:midnight;
+    font-size:2.5rem;
+    height:2.5rem;
+    width:8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff8030;
+    transform:rotate(-3deg);
+    border:1px solid black;
+    font-weight: 550;
+    border-radius:5px;
+}
+
+.sec-5-upper h3{
+    font-family:Reckless;
+    font-size:2rem;
+    font-weight: 300;
+    line-height:2.3rem;
+}
+
+.sec-5-down{
+    min-height:88vh;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+#sec-5-textarea{
+    width:100%;
+    height:13vh;
+    background-color: #faf8eb;
+    font-size: 2rem;
+    font-family: Reckless;
+    border-radius:10px; 
+    border:1px solid black;
+}
+
+.sec-5-down p{
+    font-family:figtree;
+    font-weight: 400;
+    color:#211d1b;
+    font-size:0.9rem;
+}
+
+
+.sec-5-down-tag {
+  display: flex;
+  flex-wrap: wrap;    
+  gap: 0.6rem;          
+  align-items: flex-start;
+  width: 100%;
+  height: auto;    
+}
+
+.tag {
+  background-color: #d9e9ff;
+  font-family: Reckless;
+  font-size: 2rem;
+  padding: 0.5rem 1.3rem;
+  border-radius: 13px;
+  flex: 0 1 auto;     
+  border:1px solid black;   
+}
+
+.tag:hover{
+    background-color:#4889ea79;
+    cursor:pointer;
+}
+
+.section-6{
+    height:auto;
+    background-color:#2a2857;
+}
+
+.sec-6-img{
+   background-image:url(//www.twoleavestea.com/cdn/shop/files/Our_Cafe_Wholesale_Partners.webp?v=1773753185&amp);
+   background-position: center;
+   background-size: cover;;
+   height:51vh;
+}
+
+.sec-6-text{
+    height:auto;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:4rem;
+    padding-bottom:4rem;
+}
+
+.sec-6-text-head{
+   height:30vh;
+   padding:0rem 3rem;
+}
+
+.sec-6-text h2{
+    margin-top:1.8rem;
+    text-align:center;
+    font-family:Reckless;
+    color:white;
+    font-size:2.8rem;
+    font-weight: 300;
+}
+
+.sec-6-text button{
+    border-radius:25px;
+    width:20rem;
+    height:8vh;
+    border:1px solid black;
+    font-size: 1.1rem;
+    font-family:figtree;    
+}
+
+.sec-6-text button:hover{
+    background-color: #2a2757;
+    color: white;
+    cursor: pointer;
+
+}
+
+.section-7{
+    position: relative;
+    height:190vh;
+    padding: 7.5rem 0rem 1rem 0rem; 
+    background-color: #9e6429; 
+}
+
+
+.sec-7-badge img{
+    width:8rem;
+    position: absolute;
+    top:-5%;
+    right:5%;
+}
+
+.sec-7-head{
+    height:43vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.sec-7-head button{
+    height:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 145px;
+    border:1px solid black;
+    font-family: midnight;
+    font-size:2.3rem;
+    border-radius: 8px;
+    transform: rotate(-2deg);
+    background-color: #ffcb96;
+}
+
+.sec-7-head-text1{
+    height:auto;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: midnight;
+    color:white;
+    line-height: 3.5rem;
+    max-width:25rem;
+    letter-spacing:0.1rem;
+}
+
+.sec-7-head-text2{
+    font-family:RobotoMono;
+    color:white;
+    font-size: 0.9rem;
+    margin-top:0.5rem;
+}
+
+.sec-7-container{
+    height:115vh;
+    margin-top: 3rem;
+    margin-left: 1.3rem;
+    overflow-x: auto;
+    display: flex;
+    gap:2.5rem;
+}
+
+.sec-7-card{
+    background-color:#54504b;
+    height:91vh;
+    width:87vw; 
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    border-radius:15px;
+    position: relative;
+    margin-top: 5.3rem;
+    border:1.5px solid black;
+}
+
+.sec-7-card:nth-child(1)
+{
+    background-color: #ffcb96;
+}
+
+.sec-7-card:nth-child(2)
+{
+    background-color: #c0e670;
+}
+
+.sec-7-card:nth-child(3)
+{
+    background-color:#ffd166;
+}
+
+.sec-7-card:nth-child(4)
+{
+    background-color:#ffdab3;
+}
+
+.sec-7-card:nth-child(5)
+{
+    background-color:#abed79;
+}
+
+.sec-7-card img{
+    position: absolute;
+    z-index: 1;
+    top:-14%;
+    right:15%;
+    width: 21rem;
+}
+
+.sec-7-card-text{
+  height:auto;
+  width:100%;
+  margin-top:12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:0.5rem;
+}
+
+.sec-7-card-text-head{
+    font-family: midnight;
+    font-size:2.5rem;
+    height:content-fit;
+    width:content-fit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-2deg);
+    border: 1px solid black;
+    border-radius:5px;
+}
+
+.sec-7-card:nth-child(1) .sec-7-card-text .sec-7-card-text-head{
+    background-color: #f09f54;
+}
+
+.sec-7-card:nth-child(2) .sec-7-card-text .sec-7-card-text-head{
+    background-color: #87bf0d;
+}
+
+.sec-7-card:nth-child(3) .sec-7-card-text .sec-7-card-text-head{
+    background-color: #ffb700;
+}
+
+.sec-7-card:nth-child(4) .sec-7-card-text .sec-7-card-text-head{
+    background-color:#e8aa64;
+}  
+
+.sec-7-card:nth-child(5) .sec-7-card-text .sec-7-card-text-head{
+    background-color:#69c236
+;
+}  
+
+
+.sec-7-card-text h2{
+    font-family: Reckless;
+    font-size: 2.8rem;
+    max-width:10rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 2.8rem;
+}
+
+.sec-7-card-text p{
+    font-family:figtree;
+    max-width:12rem;
+    text-align: center;
+    font-size:1.1rem ;
+    font-weight: 400;
+    margin-top:0.2rem;
+    line-height: 1.5rem;;
+}
+
+.shop{
+    margin-top: 1rem;
+    font-family: figtree;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:70px;
+    width:200px; 
+    font-size: 1.1rem;
+    line-height: 1rem;
+    border-radius:50px;
+    border:1px solid black;   
+}
+
+.shop:hover{
+   cursor:pointer;
+   background-color: #2a2757;
+   color: white;
+}
+
+.section-8{
+    height:auto;
+    background-color: #faf8eb;
+    padding: 6.7rem 0rem 3.5rem 1rem;
+   
+}
+
+.section-8 h2{
+    font-family:Reckless;
+    font-weight:300;
+    font-size:2rem;
+    max-width:24.5rem;
+    line-height:2.5rem;
+}
+
+.sec-8-container{
+    height:65vh;
+    margin-top: 5rem;
+    display: flex;
+    overflow-x: auto;
+    gap:1rem;
+}
+
+.sec-8-card{
+   height:55.8vh;
+   overflow: hidden;
+   width:18.8rem;
+   display: flex;
+   flex-shrink: 0;
+   border-radius:18px;
+   flex-direction: column;
+   border:1px solid black;
+}
+
+.sec-8-card-img{
+    height:81%;
+    width: 100%;
+    background-color: #2a2757;
+    position:relative;
+    background-size: cover;
+}
+
+.sec-8-card:nth-child(1)  .sec-8-card-img{
+    background-image: url(//www.twoleavestea.com/cdn/shop/articles/enjoy_9b280eb3-acdd-47d2-ba91-0d2f259d3d66.svg?v=1774545568&width=600);
+}
+
+.sec-8-card:nth-child(2)  .sec-8-card-img{
+    background-image: url(//www.twoleavestea.com/cdn/shop/articles/Two_Leaves_May_25_Shoot-36_16x9_6008ffcb-7380-43d9-b1f6-b1f542f934b0.jpg?v=1773683613&width=600);
+    background-position: top;
+}
+
+.sec-8-card:nth-child(3)  .sec-8-card-img{
+    background-image: url(//www.twoleavestea.com/cdn/shop/articles/Two_Leaves_May_25_Shoot-24_SQ.jpg?v=1780326557&width=600);
+}
+
+.sec-8-card:nth-child(4)  .sec-8-card-img{
+    background-image: url(//www.twoleavestea.com/cdn/shop/articles/chef_s_matcha_mix_9ae88222-5d88-415f-a90d-4cd0e47af7d8.svg?v=1775654273&width=600);
+}
+
+.sec-8-card:nth-child(5)  .sec-8-card-img{
+    background-image: url(//www.twoleavestea.com/cdn/shop/articles/ceremonial-matcha-tea-organic_5cd06e48-0fae-43a5-aee4-7d523da377a7.svg?v=1780325404&width=600);
+}
+
+.sec-8-card:nth-child(6)  .sec-8-card-img{
+    background-image: url(//www.twoleavestea.com/cdn/shop/articles/easy_to_prepare_cold_d444ce3d-bb29-4de5-83ae-4aef3582392b.svg?v=1775655934&width=600);
+}
+
+.sec-8-card:nth-child(7)  .sec-8-card-img{
+    background-image: url(//www.twoleavestea.com/cdn/shop/articles/easy_to_prepare_cold_d2bb63c1-ef3c-4bd5-ac42-ecce65535274.svg?v=1775654474&width=600);
+}
+
+.sec-8-card:nth-child(8)  .sec-8-card-img{
+    background-image: url(//www.twoleavestea.com/cdn/shop/articles/easy_to_prepare_cold_d2bb63c1-ef3c-4bd5-ac42-ecce65535274.svg?v=1775654474&width=600);
+}
+
+.sec-8-card:nth-child(9)  .sec-8-card-img{
+    background-image: url(//www.twoleavestea.com/cdn/shop/articles/mountain-high-chai-naked-tea-pour_bc4facfe-d769-467b-9d98-1ca8bc3c10a5.svg?v=1775656147&width=600);
+}
+
+.sec-8-card:nth-child(10)  .sec-8-card-img{
+    background-image: url(//www.twoleavestea.com/cdn/shop/articles/serving_powder_898afede-05d0-4bcf-bfa7-bfdb89c4c08d.svg?v=1773688431&width=600);
+}
+
+.sec-8-card-img button{
+    position:absolute;
+    top:4%;
+    left:4%;
+    font-family: midnight;
+    font-size:1.5rem;
+    border-radius: 5px;
+    border:1px solid black;
+}
+
+
+.sec-8-card-text{
+    height:19%;
+    width:100%;
+    background-color:#bfdbff;
+    font-family: RobotoMono;   
+    padding-top:1rem;
+    padding-left: 1rem; 
+}
+
+.sec-8-button{
+    display: flex;
+    justify-content: center;
+}
+
+.sec-8-explore{
+   background-color: #2a2757;
+   color: white;
+   font-size: 1rem;
+   width:18rem;
+   height:50px;
+   border-radius: 40px;
+   border:1px solid black;
+   margin-top: 2rem;
+}
+
+.sec-8-explore:hover{
+       background-color:white;
+       color:black;
+       cursor:pointer;
+}
+
+.section-9{
+    height:auto;
+    background-color:#f26411;
+    padding-bottom:4rem;
+}
+
+.sec-9-img{
+    height:52vh;
+    background-image:url(//www.twoleavestea.com/cdn/shop/files/1440.webp?v=1771593223&width=1278);
+    background-size: cover;
+    background-position: right;
+}
+
+.sec-9-text{
+    margin-top:4rem;
+    margin-left: 2.5rem;
+     margin-right: 2.5rem;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2.5rem;
+}
+
+.sec-9-text h2{
+    font-family:Reckless;
+    font-weight:300;
+    color:white;
+    font-size:2.8rem;
+    text-align: center;
+    max-width: 19rem;
+}
+
+.sec-9-text p{
+    font-family: figtree;
+    color:white;
+    text-align: center;
+    max-width: 19rem;
+    font-size:1.3rem;
+}
+
+.sec-9-text button{
+    width:100%;
+    height:3.5rem;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.sec-9-text button:hover{
+    background-color: #2a2757;
+    color:white;
+    cursor:pointer;
+}
+
+.section-10{
+    height:auto;
+    background-color:#bfdbff;
+    padding:2rem 0.8rem 2rem 0.8rem;
+}
+
+.sec-10-head{
+    font-family:midnight;
+    font-size:2rem;
+    margin-left:0.5rem;
+}
+
+.sec-10-below{
+    margin-top:1.5rem;
+    margin-left:0.5rem;
+    font-size:1.8rem;
+    color:#54504b;
+    font-family:Reckless;
+}
+
+#email{
+ height:3.5rem;
+ width:90%;
+ margin-left:0.5rem;
+ margin-right: 0.5rem;
+ padding:1rem;
+ font-family:figtree;
+ font-size:1rem;
+ border-radius:10px;
+ border:1px solid black;
+ margin-top:1.5rem;
+}
+
+.sec-10-email-submit{
+    background-color:#2a2757;   
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-left:0.5rem;
+    width:90%;
+    height:3rem;
+    border:none;
+    border-radius: 30px;
+    font-size:1rem;
+}
+
+.sec-10-email-submit:hover{
+    background-color:#ffb700;
+    color:black;
+    border:1px solid black;
+}
+
+.sec-10-icon{
+    height:8vh;
+    margin-top:2rem;
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+
+.sec-10-icon div{
+    height:100%;
+    width:3.5rem; 
+    border-radius: 50%;
+    border:1px solid black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:2rem;
+}
+
+.sec-10-icon div:hover{
+    background-color: white;
+    cursor:pointer;
+}
+
+.sec-10-box{
+    height:auto;
+    background-color:#2a2757;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    margin-top:2.8rem;
+    border-radius: 10px;
+    align-items: center;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+.sec-10-box-text{
+    font-family:Reckless;
+    display:flex;
+    align-items: center;
+    height:4.2rem;
+    justify-content:space-between;
+    width:100%;
+    font-weight: 100;
+    font-size:2rem;
+    position:relative;
+    border-bottom:0.1px solid rgba(255, 255, 255, 0.181);
+}
+
+.sec-10-box-text:nth-child(7){
+   height:7rem;
+   border-bottom: none;
+}
+
+.sec-10-box-text:nth-child(7)  p{
+    max-width:13rem;
+}
+
+.arrow-down{
+    background-color:#bfdbff;
+    height:1.7rem;
+    width:1.7rem;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color:black;
+}
+
+.sec-10-box-text:active{
+.arrow-down{
+    background-color:#ffb700;
+    transform:rotate(180deg);
+}
+ cursor:pointer;
+}
+
+.sec-10-logo{
+    margin-top: 2rem;
+    height:6rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    margin-top: 15rem;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    font-family:RobotoMono;
+    font-size:0.8rem;
+    color:#404247;
+}
+
+@media(max-width:320px){
+  .sec-3-container{
+    margin-left:0rem;
+  }
+}
+
+/*for tablet*/
+@media (min-width:768px){
+
+.section-1 p{
+    font-size:1.1rem
+}
+
+nav .nav-part-2{
+    width: 15%;
+}
+
+.section-2{
+    min-height:180vh;
+}
+
+.card-container{
+    width:40%;
+}
+
+.explore{
+    height:4.8vh;
+    width:30%;
+}
+
+.section-4{
+    height:220vh;
+    gap:16rem;
+}
+
+.sec-4-box1{
+   height:38vh;
+}
+
+.sec-4-box1 h2{
+    width:100%;
+}
+
+
+.sec-4-box3-features{
+    gap:0rem;  
+}
+
+.sec-4-box3-image{
+     width:18%;
+}
+
+.sec-4-box3 button{
+    top:70%;
+}
+ 
+.section-5{
+    padding:3.8rem 1.5rem 0rem 1.5rem;
+}
+
+.sec-6-img{
+    height:100vh;
+}
+
+.sec-6-text-head{
+    max-width:27rem;
+    height:22vh    
+}
+
+.sec-6-text button{
+    width:45%;
+}
+
+.section-7{
+    height:auto;
+}
+
+.sec-7-container{
+    height:163vh;
+}
+
+.sec-7-card{
+    height:140vh;
+}
+
+.sec-7-card img{
+     height:70%;
+     width:140%;
+     left:-45%;
+}
+
+.sec-7-card-text{
+    margin-top:33rem;
+}
+
+.sec-7-card-text p{
+  max-width:39rem;
+}
+
+.section-8 h2{
+  max-width:30rem;
+}
+
+.sec-9-img{
+    height:130vh;
+}
+}
+
+/*for desktop*/
+@media (min-width:1024px){
+
+main{
+  padding-top:4rem;
+}
+
+nav{
+    padding:0.75rem 2rem; 
+}    
+
+nav .nav-part-1{
+    display: flex;
+    flex:0.7;
+}
+
+.ri-menu-line{
+    display:none;
+
+}
+
+nav .nav-part-2{
+    height:auto;
+    display:flex;
+    flex:0 0 100px;
+    justify-content: center;
+}
+
+
+nav .nav-part-3{
+   display: flex;
+   flex:1;
+}
+
+.nav-part-3 h3{
+  display: flex;
+  font-weight: 500;
+}
+
+.section-1{
+  height:86.5vh;
+  border-bottom:1px solid black;
+  background-image:url(	https://www.twoleavestea.com/cdn/shop/files/AlpineBerry_mobile.webp?v=1774284087&width=1125.0);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;      	
+  justify-content: end;
+  align-items: start;
+  gap:1rem;
+  padding: 2.5rem 2.5rem;
+}
+
+
+.heading-mobile1-h1{
+ display: none;
+}
+
+.heading-mobile1-p{
+    display: none;
+}
+
+.section-1 h1{
+    font-family: Reckless;
+    font-size: clamp(4rem, 8.6vw, 5.2rem);
+    max-width:45vw;
+    color: white;
+    font-weight: 500;
+    text-align: start;
+}
+
+.section-1 p{
+    font-family:figtree;
+    text-align: start;
+    font-size: clamp(1.1rem, 1vw, 1.2rem);
+    font-weight: 400;
+    max-width:45vw;
+}
+
+.heading-desktop1-h1{
+    display: block;
+    min-width:56rem;              
+    line-height: 3.5rem;
+    font-size: clamp(3.5rem, 5vw, 4rem);
+    width: auto;
+    line-height: 5.8rem;
+  }
+
+  .heading-desktop1-p{
+    display:block;
+  }  
+
+
+.section-1 button{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2a2857;
+    width:fit-content;
+    padding:1rem 4rem;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.1rem;
+}
+
+.section-2{
+    min-height:205vh; 
+    padding:6.5rem 0;
+    border-bottom: 2px solid black;
+}
+
+.heading-mobile{
+    display: none;
+}
+
+.heading-desktop{
+    display: block;
+    min-width:55rem;              
+    line-height: 3.5rem;
+}
+
+.sellers{
+    font-size:3.8rem;
+    padding:0rem 0.3rem;
+    font-weight: 600;
+    display: block;
+    margin: 10rem auto 0;
+}
+
+.card-section{
+    margin: 1.2rem 0 8rem 2.5rem;
+    max-height:100vh;
+}
+
+.card-container{
+    width:20.5rem;
+    min-height:100%;
+    margin-top: 2rem;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    gap:1.3rem;
+    flex-shrink: 0;
+}
+
+.card{
+   width:100%;
+   height:58vh;
+   border-radius: 10px;
+   border:1px solid black;
+   position:relative;
+   padding:1rem;
+   display:flex;
+   flex-direction: column;
+   align-items: end;
+   justify-content: space-between;
+}
+
+.card-down{
+   min-height:190px;
+}
+
+
+.card-down p{
+    min-height:80px;
+    max-width:30vw;  
+}
+
+.card img{
+    width:85%;
+    height:260px;
+}
+
+.tea{
+    font-family:midnight;
+    background-color: white;
+    height: 2rem;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding:0.1rem 0.4rem;
+    font-size: 1.40rem;
+    border-radius:5px;
+    border:1px solid black;
+}
+
+.lower-text{
+    background-color:white;
+    font-family: figtree;
+    height:3rem;
+    width:18%;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.add{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:0.8rem;
+    padding-top:0.5rem;
+    gap:0.3rem;
+}
+
+
+.explore{
+    background-color: #2a2857;
+    color: white;
+    font-family: figtree;
+   position: absolute;
+    top:85%;
+    left: 50%;
+    transform: translateX(-50%); 
+    border-radius: 30px;
+    width:15rem;
+    height:3.5rem;
+}
+
+.section-3{
+    height:160vh;
+}
+
+#reviews{
+    font-size: 3.5rem;
+    border: 1px solid black;
+    border-radius:5px;
+    transform: rotate(-3deg);
+    margin:7.3rem 0rem 1.3rem 3rem;
+}
+
+.section-3-heading{
+    display: block;
+    font-family: Reckless;
+    font-weight: 300;
+    font-size: 3.8rem;
+    margin:0rem 0rem 6rem 3rem;
+}
+
+.sec-3-container{
+ margin-left:1.5rem;
+ height:75vh;
+}
+
+.sec-3-card{
+   height:70vh;
+   width:17.5rem;
+}
+
+.sec-3-card-text{
+ height:84%;
+}
+
+.sec-3-card-text-desktop{
+    display: block;
+}
+
+.sec-3-card-text-mobile{
+  display: none;
+}
+
+.sec-3-card-inner{
+   height:16vh;
+   width:92%;
+   top:74%;
+   left:4%;     
+}
+
+.sec-3-line{
+    width: 40%;
+    height:1px;
+    top: 50%;
+    left:8%;
+}
+
+.section-4{
+    height:380vh;
+    padding-top:12rem;
+    gap:24rem;
+}
+
+.section-4-badge{
+    position:absolute;
+    height:10rem;
+    width:10rem;
+    right: 15%;
+    top:-1.1%;
+}
+
+.sec-4-box1{
+   height:100vh;
+   gap:15.8rem;
+}
+
+.sec-4-box1 button{
+    height:12vh;
+    font-size:2.5rem ;
+}
+
+.sec-4-box1 h2{
+    font-size:11.5rem;
+    line-height:10rem;
+}
+
+.sec-4-box2{
+  font-family: Reckless;
+  height:50vh;
+  width:100%;
+}
+
+.sec-4-box2 h3{
+    font-size:3.8rem ;
+    font-weight:500;
+    line-height:4.5rem;
+    max-width: 60rem;
+}
+
+.sec-4-box3-image{
+     height:25vh;
+     object-fit: contain;
+     flex-shrink: 0;
+     width:20%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     gap:0.9rem;
+}
+
+.sec-4-box3-image img{
+    height:55%;
+    object-fit: contain;
+}
+
+.sec-4-box3{
+    height:60vh;
+    width:100%; 
+    position: relative;
+}
+
+.sec-4-box3-features{
+     width:100%;
+     gap:1.5rem;
+}
+
+.sec-4-features-mobile{
+    display: none;
+}
+
+.sec-4-features-desktop{
+    display:block;
+}
+
+.sec-4-box3-features img{
+    height:60%;
+}
+
+
+.sec-4-box3 button{
+    padding:0.9rem;
+    width:20%;
+    margin-left:40%;
+    margin-top:10%;
+}
+
+.section-5{
+    padding:7rem 2.6rem 1rem 2.6rem;
+}
+
+.discover{
+ font-size: 3.8rem;
+ height:3.5rem;
+ width:12rem;
+}
+
+.sec-5-upper{
+ gap:2.1rem;
+}
+
+.sec-5-upper h3{
+   font-size:3.8rem;
+   line-height:4.3rem;
+}
+
+#sec-5-textarea{
+   width: 43%;
+}
+
+.sec-5-down p{
+    margin-top:6rem;
+}
+
+.section-6{
+    height:auto;
+   display:flex;
+}
+
+.sec-6-img{
+    flex:1;
+    height: 79vh;
+}
+
+.sec-6-text{
+    flex:1;
+    height: 79vh;
+}
+
+.sec-6-text-head{
+    height:60vh;
+    padding:0rem 1rem;
+    
+}
+
+.sec-6-text-head h2{
+    height:80%;
+    text-align: start;
+    font-size: 5.3rem;
+    margin-top:3rem;
+}
+
+.sec-6-text button{
+    position: absolute;
+    top:76%;
+    left:10%;
+    width: 13rem;
+}
+
+.sec-7-head-text1{
+  max-width:100%;
+  font-size:3rem;
+}
+
+.sec-7-container{
+    height:auto;
+    padding-bottom:1rem;
+}
+
+.sec-7-card{
+    width:61rem;
+    height:auto;
+    padding-bottom:4rem;
+}
+
+.sec-7-card img{
+    width: 43rem;
+    height:75vh;
+    top:-15%;
+    left:-15%;
+    
+}
+
+.sec-7-card-text{
+    display:flex;
+    align-items:start;
+    margin-top:3rem;
+    margin-left:35rem;
+}
+
+.sec-7-card-text h2{
+    text-align: start;
+}
+
+.sec-7-card-text p{
+    max-width:22rem;
+    text-align:start;
+}
+
+.section-8 h2{
+    font-size: 4rem;
+    max-width: 60rem;
+    line-height:4rem;
+}
+
+.sec-8-container{
+ margin-top:8rem;
+}
+
+.sec-8-card{
+    height:95%;
+    width:21rem;
+}
+
+.section-9{
+  position:relative;
+  padding-bottom:0rem;
+}
+
+.sec-9-text{
+    background-color: #f26411;
+    border:1px solid black;
+    position:absolute;
+    top:1%;
+    height:88%;
+    width:30rem;
+    border-radius:10px;
+    display:flex;
+    align-items:start;
+    padding-left:2rem;
+}
+
+.sec-9-text h2{
+    font-size:3.8rem;
+    line-height:4rem;
+    max-width: 80%;
+    margin-top: 5rem;
+    text-align:start;
+}
+
+.sec-9-text p{
+  text-align:start;
+}
+
+.sec-9-text button{
+    width:15rem;
+    margin-top:15rem;
+}
+
+.section-10{
+  padding-left:3rem;
+  padding-right:3rem;
+}
+
+}
+
+@media(min-width:1440px){
+
+nav .nav-part-1{
+    display: flex;
+    flex:1;
+}
+
+.section-1{
+  background-image:url(	https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=5120.0);
+  background-size:220%;
+}
+
+#reviews{
+    margin:6rem 0rem 1.3rem 13rem;
+}
+
+.section-2{
+    min-height:178vh;
+}
+
+.card-section{
+    padding-top:0.5rem;
+    max-height:83vh;
+}
+
+.card{
+   height:48vh;
+}
+
+.card-down p{
+    max-width:21vw;  
+}
+
+.card img{
+    width:90%;
+}
+
+.explore{
+    top:86%;
+    height:3.3rem;
+}
+
+.section-3{
+    height:136vh;
+}
+
+.sec-3-container{
+    height:68vh;
+}
+
+.sec-3-card{
+    height:58vh;
+}
+
+.section-3-heading{
+    margin:0rem 0rem 6rem 13rem;
+}
+
+.sec-3-card-inner{
+    height:13.5vh;
+}
+
+.section-4{
+  height:340vh;
+}
+
+.section-4-badge{
+    position:absolute;
+    height:10rem;
+    width:10rem;
+    right:10%;
+    top:-1%;
+}
+
+.sec-4-box1 button{
+    height:6vh;    
+    font-size:2.5rem ;
+}
+
+.sec-4-box1 h2{
+    max-width:50%;
+}
+
+.sec-4-box2 h3{
+    max-width: 85rem;
+}
+
+.sec-4-box3{
+ height:50vh;
+}
+
+.sec-4-box3-image{
+     height:23vh;
+     object-fit: contain;
+     flex-shrink: 0;
+     width:15%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     gap:0.9rem;
+}
+
+.sec-4-box3 button{
+    top:50%;
+    width:13rem;
+    left:2%;
+}
+
+.section-5{
+    padding:7rem 11rem 0rem 13rem;
+}
+
+#sec-5-textarea{
+    width:38%;
+    height:11vh;
+}
+
+
+.sec-6-img{
+    height: 95vh;
+}
+
+.sec-6-text{
+    height:95vh;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.sec-6-text-head{
+    height:60vh;
+    padding:0rem 2.5rem;
+    max-width:100rem;
+}
+
+.sec-6-text-head h2{
+    height:40%;
+    font-size: 5.2rem;
+    margin-top:13rem;
+    max-width:90%;
+}
+
+.sec-6-text button{
+    position: absolute;
+    top:69%;
+    left:6%;
+    width: 13rem;
+    height:3.3rem;
+    border-radius:50px;
+}
+
+.sec-7-head{
+  height:auto;
+}
+
+.sec-7-container{
+    height:auto;
+    margin-top:5rem;
+}
+
+.sec-7-card{
+    width:87rem;
+}
+
+.sec-7-card img{
+    height:60vh;
+    width:45rem;
+    left:0%;
+}
+
+.sec-7-card-text{
+    margin-left:50rem;
+}
+
+.sec-7-card-text-head{
+    font-size:4rem;
+}
+
+.sec-7-card-text h2{
+    font-size:4rem;
+    max-width:14rem;
+    line-height: 4rem;
+}
+
+.sec-7-card-text p{
+    font-size:1.1rem;
+    max-width: 26rem;
+}
+
+.section-8 h2{
+   margin-left:12rem;
+}
+
+.sec-8-container{
+    margin-left:1.5rem;
+    height:auto;
+}
+
+.sec-8-card{
+    height:48vh;
+}
+
+.section-9{
+    height:90vh;
+}
+
+.sec-9-img{
+  height:90vh;
+}
+
+.sec-9-text{
+    height:78vh;
+}
+
+.sec-9-text button{
+    margin-top:10rem;
+}
+
+.sec-10-icon div{
+    width:4rem;
+}
+
+}
+
+@media(min-width:2560px){
+ 
+.section-1{
+  background-image:url(	https://www.twoleavestea.com/cdn/shop/files/AlpineBerry.webp?v=1774284236&width=5120.0);
+  background-size: 160%;
+}    
+
+.section-2{
+  min-height:99vh;
+}
+
+.section-2text{
+   min-height: auto;
+   width: 100%;              
+   display:block;
+   padding:none;      
+}
+
+.section-2text h2{
+   width:100%;
+   height:17vh; 
+   font-size:6.3rem;
+   text-align: center;            
+   margin:none;
+   line-height:7rem;               
+}
+
+.sellers{
+    margin-top:8rem;
+}
+
+.card-section{
+    max-height:43vh;
+}
+
+.card-container{
+    max-height:100%;
+}
+
+.card{
+    max-height:28vh;
+    background-color:#2a2857;
+}
+
+.card img{
+    height:80%;
+}
+
+#reviews{
+    margin:8rem 0rem 1.3rem 48rem;
+}
+
+.section-3{
+  height:68vh;
+}
+
+.sec-3-card{
+    height:30vh;
+}
+
+.sec-3-card-inner{
+   height:7vh;
+}
+
+.section-3-heading{
+    margin:0rem 0rem 6rem 48rem;
+}
+
+.sec-3-container{
+ justify-content: center;
+}
+
+.section-4{
+    height:138vh;
+    gap:21rem;
+}
+
+.section-4-badge{
+    position:absolute;
+    height:10rem;
+    width:10rem;
+    left:88%;
+    top:-3%;
+}
+
+.sec-4-box1{
+    gap:8rem;
+    height:fit-content;
+}
+
+.sec-4-box1 button{
+    height:3vh;
+}
+
+.sec-4-box1 h2{
+    max-width:40%;
+}
+
+.sec-4-box3{
+  height:28vh;
+}
+
+.sec-4-box3-image{
+     width:8%;
+     gap:0.5rem;
+}
+
+.sec-4-box3-image img{
+    height:30%;
+}
+
+.sec-4-box3 button{
+    padding:0.9rem;
+    width:8%;
+    top:5%;
+    left:6%;
+}
+
+.section-5{
+    height:68vh;
+    padding:8rem 40rem 3rem 50rem
+}
+
+#sec-5-textarea{
+    height:6vh;
+}
+
+.section-6{
+    height:88vh;
+}
+
+.sec-6-img{
+    height:88vh;
+}
+
+.sec-6-text-head{
+    padding-top:18rem;
+}
+
+.sec-6-text-head h2{
+    max-width:36rem;
+}
+
+.section-6 button{
+    top:55%;
+    left:4%;
+}
+
+.sec-7-card{
+    width:157rem;
+}
+
+.sec-7-card img{
+    left:23%;
+   height:35vh;
+}
+
+.sec-7-card-text{
+    margin-left:90rem;
+}
+
+.sec-7-card-text h2{
+    font-size:5rem;
+    max-width:20rem;
+}
+
+.section-8 h2{
+    margin-left:40rem;
+}
+
+.sec-8-card{
+    height:25vh;
+}
+
+.section-9{
+    height:50vh;
+}
+
+.sec-9-img{
+    height:50vh;
+}
+
+.sec-9-text{
+    height:40vh;
+}
+
+.sec-10-icon div{
+width:5rem;
+height:5rem;
+}
+
+}
