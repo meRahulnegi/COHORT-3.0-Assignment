@@ -7,12 +7,16 @@
 
 greet("Rahul Negi");*/
 
+
+
 //FUNCTION EXPRESSION
-/*var nam= function(a){
+/*var naam= function(a){
     console.log('My name is',a);
 }
 
-nam("Rahul Negi");*/
+naam("Rahul Negi");*/
+
+
 
 //ARROW FUNCTION
 /*var greet= (a)=>{
@@ -22,6 +26,14 @@ nam("Rahul Negi");*/
 greet('Rahul Negi');*/
 
 
+
+// ONE LINE ARROW FUNCTION
+/* var greet = a => console.log("HOW ARE YOU!",a);
+
+ greet("rahul negi");*/
+                                                           
+
+ 
 //IIFE->IMMIDIATELY INVOKED FUNCTION EXPRESION
 //*IT CAN USED WITH ANY FORM OF FUNCTION.
 //BY ARROW FUNCTION

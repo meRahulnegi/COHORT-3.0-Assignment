@@ -47,8 +47,7 @@ console.log(score);*/
 
 //Q7->Create three variables for first name, last name, and full name.
 /*var firstname=prompt("Enter Your First Name:");
-var secondname=prompt("Enter Your Last Name");
-
+var secondname=prompt("Enter Your Last Name:");
 console.log("YOUR FULL NAME:",firstname+secondname);*/
 
                                                //DATA TYPES//
@@ -112,14 +111,14 @@ console.log(typeof(bool));*/
 - `"5" - 2`
 - `true + 1`*/
 
-/*console.log("5"+2);
-console.log("5"-2);
-console.log(true+1);*/
+// console.log("5"+2);
+// console.log("5"-2);
+// console.log(true+1);
 
-//Q5->Create a variable with value "123abc" and convert it into a number.
-/*var a="123abc";
-num=Number(a);
-console.log(num);*/
+// Q5->Create a variable with value "123abc" and convert it into a number.
+/* var a="123abc";
+ num=parseInt(a);
+ console.log(num);*/
 
 //Q6->Use parseInt() on "500px".
 /*var str="500px";
@@ -131,7 +130,6 @@ console.log(typeof(num));*/
 //Q1->Add two numbers and print the result.
 /*var num1=Number(prompt("Enter First Number:"));
 var num2=Number(prompt("Enter second Number:"));
-
 console.log(num1+num2);*/
 
 //Q2->Find the remainder when 25 is divided by 4.
@@ -433,7 +431,7 @@ if (empty){
     console.log("The string is Truthy");
 } else {
     console.log("The string is Falsy");
-} */                                                         
+}*/                                                         
 
     
 //Q2->Check whether 0 is truthy or falsy.
@@ -491,7 +489,7 @@ console.log(`First Name:${fname}
     Last Name: ${sname}
     Age: ${age}
     Mobile No.: ${mob}
-    Email: ${email}`);*/
+    Email: ${email}`);*/  
     
 //Q2->Calculate the area of a rectangle.
 /*var length= Number(prompt("Enter the length of Rectangle:"));
@@ -661,7 +659,7 @@ console.log("Final Bill: ₹" + finalBill);*/
                                                            //CHALLENGE QUESTIONS FOR BIGINNERS
 
 //Q1->Generate a random OTP of 4 digits.
-/*var otp= Math.floor(Math.random()*9000)+1000;
+/*var otp= Math.floor(Math.random()*900)+1000;
 console.log("Your four digit OTP: "+otp); */
 
 //Q2->Reverse a 3-letter string manually.
@@ -680,10 +678,10 @@ var last=str.length;
 console.log("Last Character of the string:"+str.charAt(last-1));*/
 
 //Q4->Convert a full name into uppercase initials.
-/*var name=prompt("Enter your Full Name:");
-var names= name.split(" ");
-var initials=names[0].charAt(0).toUpperCase()+(".")+names[1].charAt(0).toUpperCase()+(".");
-console.log("Full Name: "+name);
+/*var fname=prompt("Enter your Full Name:");
+var array= fname.split(" ");
+var initials=array[0].charAt(0).toUpperCase()+(".")+array[1].charAt(0).toUpperCase()+(".");
+console.log("Full Name: "+fname);
 console.log("Initials UpperCase: "+initials);*/
 
 
@@ -692,7 +690,7 @@ console.log("Initials UpperCase: "+initials);*/
 var str2= prompt("Enter String2:");
 str1= str1.toLowerCase();
 str2= str2.toLowerCase();
-if(str1==str2){
+if(str1===str2){
     console.log("They are equal");
 }else{
     console.log("They are not equal");
@@ -731,7 +729,7 @@ if(amount<=0){
 }*/
 
 //Q9->Simulate a traffic light system using switch.
-/*var light = prompt("Enter the traffic light color (Red, Yellow, Green):");
+/*var light = prompt("Enter the traffic light color (red, yellow, green):");
 light = light.toLowerCase();
 switch (light) {
     case "red":
